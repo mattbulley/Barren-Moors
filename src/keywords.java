@@ -261,6 +261,7 @@ public class keywords {
 			case "sword":
 				strings[0] = "You attack the dragon with your hand!.\r\n"; 
 				strings[1] = "He disappears in a ploom of smoke!.\r\n"; 
+				
 				break;
 			case "end":
 				System.out.println("WINNER: Thanks for playing.");
@@ -271,6 +272,9 @@ public class keywords {
 		}
 			
 		main.autoText(strings, true, 20);
+		
+		if(ID.equals("sword"))
+			posn33("end");
 	}
 	
 	public static void pos10(String ID) throws InterruptedException
